@@ -5,6 +5,8 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 # build rom
 source build/envsetup.sh
+export CHERISH_MAINTAINER=Sundram
+export CHERISH_NONGAPPS=true
 lunch ssos_RMX3171-userdebug
 export TZ=Asia/Dhaka #put before last build command
 mka derp
